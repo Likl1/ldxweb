@@ -1,0 +1,202 @@
+.main {
+     width: 980px;
+     height: 455px;
+     /* background-color: pink; */
+     margin-left: 220px;
+     margin-top: 10px;
+}
+.focus {
+     float: left;
+     width: 721px;
+     height: 455px;
+     background-color: purple;
+}
+.newsflash {
+     float: right;
+     width: 250px;
+     height: 455px;
+     /* background-color: skyblue; */
+}
+.news {
+     height: 165px;
+     /* background-color: pink; */
+     border: 1px solid #e4e4e4;
+}
+.lifeservice {
+     /* 因为ul 的宽度超出的部分隐藏 */
+     overflow: hidden;
+     height: 209px;
+     /* background-color: red; */
+     border: 1px solid #e4e4e4;
+     border-top: 0;
+}
+.lifeservice ul {
+     /* 因为浮动的盒子宽度不够掉下去，所以给父盒子加大 */
+     width: 252px;
+}
+.lifeservice ul li {
+     float: left;
+     width: 63px;
+     height: 71px;
+     border-right: 1px solid #e4e4e4;
+     border-bottom: 1px solid #e4e4e4;
+     text-align: center;
+}
+.lifeservice ul li i{
+     /* 转成行内块元素 */
+     display: inline-block;
+     width: 24px;
+     height: 28px;
+     background-color: pink;
+     margin-top: 12px;
+     background: url(../images/icons.png) no-repeat -17px -15px;
+}
+.lifeservice ul li div {
+     position: relative;
+}
+.lifeservice ul li div .minus {
+     position: absolute;
+     right: 0px;
+     top: -63px;
+}
+.news-hd {
+     height: 33px;
+     border-bottom: 1px dotted #e4e4e4;
+     line-height: 33px;
+     padding: 0 15px;
+}
+.news-hd h5 {
+     float: left;
+     font-size: 14px;
+}
+.news-hd .more {
+     float: right;
+}
+.news-hd .more::after {
+     font-family: 'icomoon';
+     content: '\e920';
+     margin-left: 5px;
+}
+.news-bd{
+     padding: 5px 15px 0;
+}
+.news-bd ul li {
+     height: 24px;
+     line-height: 24px;
+     /* 把超出的文字最后用省略号显示 */
+     /* 第一：超出的隐藏 */
+     overflow: hidden; 
+     /* 第二：在一行内显示 */
+     white-space: nowrap;
+     /* 第三：变省略号 */
+     text-overflow: ellipsis;
+}
+
+.bargain {
+     margin-top: 5px; 
+}
+
+/* 推荐模块制作 */
+.recom {
+     height: 163px;
+     background-color: ebebeb;
+     margin-top: 12px;
+}
+.recom-hd {
+     float: left;
+     width: 205px;
+     height: 163px;
+     background-color: #5c5251;
+     text-align: center;
+     padding-top: 30px;
+}
+.recom-bd {
+     float: left;
+}
+.recom-bd ul li {
+     position: relative;  
+     float: left;
+}
+/* 为了防止上传的图片和盒子不一致，强制图片的大小  */
+.recom-bd ul li img {
+     width: 248px;
+     height: 163px;
+}
+/* nth-child(-n+3) 前面三个添加右竖线 */
+.recom-bd ul li:nth-child(-n+3):after {
+     content: '';
+     position: absolute;
+     right: 0;
+     top: 10px;
+     width: 1px;
+     height: 145px;
+     background-color: #ddd;
+}
+
+/* 家用电器模块制作 */
+.box_hd {
+     height: 30px;
+     border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+     float: left;
+     color: #c81623;
+     font-size: 18px;
+     font-weight: 400;
+}
+/* 整体向右浮动 */
+.tab_list {
+     float: right;
+     line-height: 30px;
+}
+.tab_list ul li {
+     float: left;
+}
+.tab_list ul li a {
+     margin:0 15px;
+}
+.floor .w {
+     margin-top: 30px;
+}
+
+.box_bd {
+     height: 361px;
+     /* background-color: pink; */
+}
+.tab_list_item>div {
+     float: left;
+     height: 361px;
+}
+.col_210 {
+     width: 210px;
+     background-color: #f9f9f9;
+     text-align: center;
+}
+.col_210 ul li {
+     float: left;
+     width: 85px;
+     height: 34px;
+     border-bottom: 1px solid #ccc;
+     text-align: center;
+     line-height: 33px;
+     margin-right: 10px;
+}
+.col_210 ul {
+     padding-left: 12px;
+}
+
+.col_329 {
+     width: 329px;
+}
+.col_221 {
+     width: 221px;
+     border-right: 1px solid #ccc;
+} 
+.col_219 {
+     width: 219px;
+}
+.bb {
+     /* 一般情况下，a如果包含有宽度的盒子，a需要转为块级元素 */
+     display: block;
+     border-bottom: 1px solid #ccc;
+}

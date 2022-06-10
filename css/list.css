@@ -1,0 +1,120 @@
+/* 列表页专有的css */
+/* 秒杀模块  */
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #b1191a;
+    padding: 3px 0 0 14px;
+}
+/* 导航栏 模块 */
+.sk_list {
+    float: left;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    /* 把a 转为块级元素 */
+    display: block;
+    line-height: 47px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    padding:0 30px;
+}
+.sk_con {
+    float: left;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    display: block;
+    /* 行高一步是为了文字底部对齐 */
+    line-height: 49px;
+    font-size: 14px;
+    padding: 0 20px;
+}
+/* 小 ul里面最后一个li里面的a */
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+.sk_bd ul li {
+    overflow: hidden;
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+    /* 开始把原来的外边框透明，鼠标经过才显示 */
+    border: 1px solid transparent;
+}
+/* 把4的倍数 去除边内边距 */
+.sk_bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #b1191a;
+}
+.list_text {
+    padding:0 10px
+}
+.list_text h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+.price {   
+    overflow: hidden;
+    margin-top: 15px;
+    height: 25px;
+}
+.price h3{
+    float: left;
+    font-size: 22px;
+    color: #e60012;
+}
+.price i {
+    float: left;
+    line-height: 39px;
+    font-size: 14px;
+    color: #a4a4a4;
+    margin-left: 10px;
+    /* 在中间加删除线 */
+    text-decoration: line-through;
+}
+.remain {
+    position: relative;
+    margin-top: 17px;
+    /* line-height: ; */
+
+}
+.remain em {
+    display: inline-block;
+    width: 133px;
+    height: 14px;
+    background-color: #ed282e;
+    border-radius: 7px;
+}
+.remain span {
+    display: inline-block;
+    position: absolute;
+    left: 168px;
+    width: 16px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid #ed282e;
+    border-radius: 0 7px 7px 0;
+}
+.list_text button {
+    display: inline-block;
+    background-color: #b1191a;
+    width: 290px;
+    height: 51px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
